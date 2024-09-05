@@ -51,9 +51,9 @@ jobs:
             script: |
               # Check if Docker is installed
               if ! command -v docker &> /dev/null; then
-              echo "Docker not found. Installing Docker..."
-              curl -fsSL https://get.docker.com -o get-docker.sh
-              sudo sh get-docker.sh
+                echo "Docker not found. Installing Docker..."
+                curl -fsSL https://get.docker.com -o get-docker.sh
+                sudo sh get-docker.sh
               else
                 echo "Docker is already installed."
               fi
